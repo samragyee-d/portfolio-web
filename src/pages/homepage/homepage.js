@@ -1,22 +1,24 @@
 import React from 'react';
 import './homepage.css';
-
+import { Link } from "react-router-dom";
 
 function homepage() {
+	const links = () => console.log("Mwaahahah")
   return (
     <main>
-	<div class="book">
-		<div class="book-cover">
+	<div className ="book">
+		<div className ="book-cover" >
 			<div>
 				<h1>Samragyee Dhakal</h1>
 				<h2>Welcome to my personal website!</h2>
 			</div>
 		</div>
     </div>
-	<div class="interior">
-		<div class ="interior-cover">
+	<div className ="interior">
+		<div className ="interior-cover">
 			<ul className='text'>
-				<li>Education</li>
+				<h2>Table of Contents</h2>
+				<li><Link onClick={links}>Education</Link></li>
 				<li>Skills</li>
 				<li>Expierence</li>
 				<li>Projects</li>
