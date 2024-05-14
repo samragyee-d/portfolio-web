@@ -1,25 +1,31 @@
 import React from 'react';
 import './homepage.css';
-import { Link } from "react-router-dom";
 import { useState } from 'react';
+import ReactCardFlip from "react-card-flip";
 
 function Homepage() {
-	const links = () => console.log("Mwaahahah")
+	const [isFlipped, setIsFlipped] = useState(false);
+	
+	function flipCover(){
+		setIsFlipped(!isFlipped);
+	};
   return (
     <main>
-	<div className ="book">
-		<div className ='book-cover' >
-			<div>
-				<h1>Samragyee Dhakal</h1>
-				<h2>Welcome to my personal website!</h2>
+		<ReactCardFlip flipDirection='horizontal' isFlipped={isFlipped}>
+			<div className ='book-cover-front' onClick={flipCover}>
+				<div>
+					<h1>Samragyee Dhakal</h1>
+					<h2>Welcome to my personal website!</h2>
+				</div>
 			</div>
-		</div>
-    </div>
-	<div className ="interior">
+			<div className ='book-cover-back' onClick={flipCover}>
+				<h1>back</h1>
+			</div>
+		</ReactCardFlip>
 		<div className ="interior-cover">
 			<ul className='text'>
 				<h2>Table of Contents</h2>
-				<li><Link onClick={links}>Education</Link></li>
+				<li></li>
 				<li>Skills</li>
 				<li>Expierence</li>
 				<li>Projects</li>
@@ -27,7 +33,6 @@ function Homepage() {
 				<li>Misc</li>
 			</ul>
 		</div>
-	</div>
     </main>
   );
 }
