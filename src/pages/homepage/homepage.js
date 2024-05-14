@@ -1,13 +1,14 @@
 import React from 'react';
 import './homepage.css';
 import { Link } from "react-router-dom";
+import { useState } from 'react';
 
-function homepage() {
+function Homepage() {
 	const links = () => console.log("Mwaahahah")
   return (
     <main>
 	<div className ="book">
-		<div className ="book-cover" >
+		<div className ='book-cover' >
 			<div>
 				<h1>Samragyee Dhakal</h1>
 				<h2>Welcome to my personal website!</h2>
@@ -31,4 +32,4 @@ function homepage() {
   );
 }
 
-export default homepage;
+export default Homepage;
