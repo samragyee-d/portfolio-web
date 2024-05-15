@@ -1,60 +1,36 @@
-.book-cover-front{
-    height:550px;
-    width:400px;
-    border-radius:10px;
-    /*makes kinda bigger
-    padding-left: 50px;*/
-    background-color: black;
-    color:white;
+.book {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: auto;
+    height: 100vh;
 }
 
 
-    
-    /*display: flex;
-   
-    --book-height: 100vh;
-    --book-ratio: 1.4;
-    height: var(--book-height);
-    width: calc(var(--book-height) / var(--book-ratio));
-    overflow: auto;
-    background-color: #0a0a0a;*/
-
-
-.book-cover-back{
-    height:550px;
-    width:400px;
-    border-radius:10px;
-    /*makes kinda bigger
-    padding-left: 50px;*/
+.book-cover-front, .book-cover-back {
+    height: 550px;
+    width: 400px;
+    border-radius: 10px;
     background-color: black;
-    color:white;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: auto;
+    z-index: 1;
+    bottom: -275px;
+    position: absolute; 
 
 }
 
-.interior-cover{
-    height:550px;
-    width:400px;
-    border-radius:10px;
-    /*makes kinda bigger
-    padding-left: 50px;*/
-    background-color: black;
-    color:white;
+.interior-cover {
+    height: 550px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: green;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: auto;
-   
-}
-
-ul.text{
-    font-size: 30px;
-    list-style-type:none;
+    z-index: -1;
+    position: relative;
 }

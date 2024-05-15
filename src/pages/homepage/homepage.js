@@ -10,7 +10,7 @@ function Homepage() {
 		setIsFlipped(!isFlipped);
 	};
   return (
-    <main>
+    <main className="book">
 		<ReactCardFlip flipDirection='horizontal' isFlipped={isFlipped}>
 			<div className ='book-cover-front' onClick={flipCover}>
 				<div>
@@ -25,7 +25,7 @@ function Homepage() {
 		<div className ="interior-cover">
 			<ul className='text'>
 				<h2>Table of Contents</h2>
-				<li></li>
+				<li>Education</li>
 				<li>Skills</li>
 				<li>Expierence</li>
 				<li>Projects</li>
