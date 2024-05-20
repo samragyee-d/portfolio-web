@@ -1,11 +1,14 @@
 import React from 'react';
 import './homepage.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import ReactCardFlip from "react-card-flip";
 
 function Homepage() {
 
+//To-do list:
 //add a feature that will duplicate the filler cards
+	//organize them by column
+	//make them move slightly to the left every time
 //add a popup when page is loaded that says "Samragyee Resume" or smth like that. Include a "Play" button.
 //add a deck of cards that the user can draw from. Each card will have a fun fact or smth. 
 //add a page for every section of resume (card text is link)
@@ -19,7 +22,7 @@ function Homepage() {
 	};
   return (
     <main className="board">
-		<ReactCardFlip flipDirection='horizontal' isFlipped={isFlipped}>
+		<ReactCardFlip flipDirection='vertical' isFlipped={isFlipped}>
 			<div className ='book-cover-front' onClick={flipCover}>
 				<div>
 					<h2>Education</h2>
@@ -30,12 +33,8 @@ function Homepage() {
 				<h2>back</h2>
 			</div>
 		</ReactCardFlip>
-		<div className="filler-card">
-			<div className="filler-card-int">
-			</div>
-		</div>
     </main>
   );
-}
+};
 
 export default Homepage;

@@ -2,12 +2,14 @@ import React from "react";
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Homepage from "./pages/homepage/homepage.js";
 import Education from "./pages/Education/Education.js";
+import CardContainer from "./pages/homepage/Cards/CardContainer.js";
 import './App.css';
 
 
 function App() {
   return (
     <main className="App">
+      <CardContainer />
       <Router>
         <Routes>
           <Route path="/" exact Component={Homepage}/>
