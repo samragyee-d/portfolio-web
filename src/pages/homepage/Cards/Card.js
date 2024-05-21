@@ -1,10 +1,10 @@
 import React from 'react';
-import './Card.css'; // Ensure correct path to CSS
+import './Card.css';
 
 const Card = ({ index }) => {
   const style = {
-    transform: `translateY(${index * 20}px)`, // Move down by 200px for each card
-    left: '200px', // Constant X-position
+    transform: `translateY(${index * 20}px)`, 
+    left: '200px', 
   };
 
   return (

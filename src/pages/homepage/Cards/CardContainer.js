@@ -1,6 +1,6 @@
 import React from 'react';
-import Card from './Card'; // Import Card component from the same directory
-import './CardContainer.css'; // Import the CSS for CardContainer
+import Card from './Card'; 
+import './CardContainer.css'; 
 
 const CardContainer = () => {
   const numberOfCards = 2;
