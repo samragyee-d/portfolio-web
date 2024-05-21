@@ -1,12 +1,5 @@
-import React from 'react';
-import './homepage.css';
-import { useState } from 'react';
-import ReactCardFlip from "react-card-flip";
-
-function Homepage() {
-
 //To-do list:
-//add a feature that will duplicate the filler cards
+//add a feature that will duplicate the filler cards --do @home
 	//organize them by column
 	//make them move slightly to the left every time
 //add a popup when page is loaded that says "Samragyee Resume" or smth like that. Include a "Play" button.
@@ -15,12 +8,20 @@ function Homepage() {
 //include lil symbols on card (ex. "Education" would have books) similar to real playing cards. 
 //optional: add a point system (idk how this would work yet)
 
+import React from 'react';
+import './homepage.css';
+import { useState } from 'react';
+import ReactCardFlip from "react-card-flip";
+
+function Homepage() {
 	const [isFlipped, setIsFlipped] = useState(false);
 
 	function flipCover(){
 		setIsFlipped(!isFlipped);
 	};
+	
   return (
+	
     <main className="board">
 		<ReactCardFlip flipDirection='vertical' isFlipped={isFlipped}>
 			<div className ='book-cover-front' onClick={flipCover}>
@@ -33,6 +34,8 @@ function Homepage() {
 				<h2>back</h2>
 			</div>
 		</ReactCardFlip>
+
+
     </main>
   );
 };

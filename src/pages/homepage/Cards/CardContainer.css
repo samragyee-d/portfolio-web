@@ -1,0 +1,7 @@
+/* src/components/CardContainer.css */
+.card-container {
+    position: relative; /* Container must have relative positioning for cards to be positioned absolutely */
+    height: 2000px; /* Adjust this to fit all cards if necessary */
+    width: 2000px; /* Adjust this to fit all cards if necessary */
+  }
+  

@@ -1,20 +1,18 @@
-import React from "react";
-import Card from "./Card";
+import React from 'react';
+import Card from './Card'; // Import Card component from the same directory
+import './CardContainer.css'; // Import the CSS for CardContainer
 
+const CardContainer = () => {
+  const numberOfCards = 2;
+  const cardsArray = Array.from({ length: numberOfCards });
 
-function CardContainer() {
-    const cardNumber = 10;
-    const cardArray = Array.from ({ length: cardNumber });
-    return (
-    <main>
-        <div className="cardContainer">
-            {cardArray.map ((___, index) =>
-            ( <Card key={index} />))} 
-        </div>
-
-    </main>
-
+  return (
+    <div className="card-container">
+      {cardsArray.map((_, index) => (
+        <Card key={index} index={index} />
+      ))}
+    </div>
   );
-}
+};
 
 export default CardContainer;
