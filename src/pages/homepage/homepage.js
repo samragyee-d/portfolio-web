@@ -1,7 +1,7 @@
 //To-do list:
-//add a feature that will duplicate the filler cards --do @home
-	//organize them by column
-	//make them move slightly to the left every time
+//DONE: //add a feature that will duplicate the filler cards --do @home
+	//DONE: //organize them by column
+	//DONE: //make them move slightly to the left every time
 //add a popup when page is loaded that says "Samragyee Resume" or smth like that. Include a "Play" button.
 //add a deck of cards that the user can draw from. Each card will have a fun fact or smth. 
 //add a page for every section of resume (card text is link)

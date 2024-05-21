@@ -16,36 +16,6 @@ body{
     justify-content: center;
     align-items: center;
     position: absolute; 
-    margin-right: -10px;
     left:100px;
-    top: 50px;
     border: 2px solid black;
-}
-
- .filler-card{
-    height: 300px;
-    width: 200px;
-    border-radius: 20px;
-    background-color: brown;
-    color: #e53935		;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute; 
-    z-index: -1;
-    left: 350px
-
-}
-
-.filler-card-int {
-    height: 280px;
-    width: 180px;
-    border-radius: 20px;
-    background-color: white;
-    color: #e53935		;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute; 
-    z-index: -1;
 }

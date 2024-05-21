@@ -1,10 +1,9 @@
 import React from 'react';
 import './Card.css';
 
-const Card = ({ index }) => {
+const Card = ({ index, xPosition }) => {
   const style = {
-    transform: `translateY(${index * 20}px)`, 
-    left: '200px', 
+    transform: `translate(${xPosition}px, ${index * 30}px)`, 
   };
 
   return (
