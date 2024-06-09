@@ -4,20 +4,21 @@ import './CardContainer.css';
 
 //Changes to the number of piles can be made here:
 const CardContainer = () => {
-  const numberOfCards = 2;
-  const numberOfCards2 = 3;
-  const numberofCards3 = 4;
-  const numberofCards4 = 5;
+  const numberOfCards = 0;
+  const numberOfCards2 = 1;
+  const numberofCards3 = 2;
+  const numberofCards4 = 3;
   const cardsArray = Array.from({ length: numberOfCards });
   const cardsArray2 = Array.from ({ length: numberOfCards2 });
-  const cardsArray3 = Array.from ( { length: numberofCards3});
-  const cardsArray4 = Array.from ( { length: numberofCards4});
+  const cardsArray3 = Array.from ( { length: numberofCards3 });
+  const cardsArray4 = Array.from ( { length: numberofCards4 });
   
 //Move all the cards at once
+  const moveBy = 150
   const xPosition1 = 400;
-  const xPosition2 = xPosition1 + numberOfCards + 150;
-  const xPosition3 = xPosition2 + numberOfCards2 + 150;
-  const xPosition4 = xPosition3 + numberofCards3 + 150;
+  const xPosition2 = xPosition1 + numberOfCards + moveBy;
+  const xPosition3 = xPosition2 + numberOfCards2 + moveBy;
+  const xPosition4 = xPosition3 + numberofCards3 + moveBy;
 
   return (
       <div className="card-container">
