@@ -3,14 +3,16 @@
 	//DONE: //organize them by column
 	//DONE: //make them move slightly to the left every time
 //DONE: add a popup when page is loaded that says "Samragyee Resume" or smth like that. Include a "Play" button.
+//DONE: Route the "Resume" button of the pop-up to another resume page
+//PRIORITY
 //Add the little piles for the lil sections
-//Route the "Resume" button of the pop-up to another resume page
 //add a deck of cards that the user can draw from. Each card will have a fun fact or smth. 
-//add a page for every section of resume (card text is link)
+//1 - add a page for every section of resume (card text is link)
+//OPTIONAL:
 //include lil symbols on card (ex. "Education" would have books) similar to real playing cards. 
-//optional: make it playable.
-//optional: add a timer
-//optional: add a point system (idk how this would work yet)
+//make it playable.
+//add a timer
+//add a point system (idk how this would work yet)
 
 //THINGS TO FIX: 6/9/2024:
 //- Cards don't flip, fixed: typo!!!! *facepalm*

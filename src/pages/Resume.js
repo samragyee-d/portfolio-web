@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-export default function Resume() {
+function Resume() {
   return (
     <main>
       <h1>Resume</h1>
     </main>
-  )
+  );
 }
+export default Resume;
