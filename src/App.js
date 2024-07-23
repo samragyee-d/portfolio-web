@@ -1,26 +1,24 @@
-import React from "react";
-import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Homepage from "./pages/homepage/homepage.js";
-import Education from "./pages/Education/Education.js";
-import CardContainer from "./pages/homepage/Cards/CardContainer.js"; 
-import Resume from "./pages/Resume.js";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Homepage from './pages/homepage/homepage';
+import Education from './components/Education';
+import CardContainer from './pages/homepage/Cards/CardContainer';
+import UnivCard from "./pages/homepage/Cards/UnivCard";
+import Resume from './pages/Resume';
 import './App.css';
-
 
 function App() {
   return (
     <main className="App">
-      <CardContainer />
       <Router>
+        <UnivCard />
+        <CardContainer />
         <Routes>
-          <Route path="/" exact Component={Homepage}/>
+          <Route path="/" exact element={<Homepage />} />
+          <Route path="/E" exact element={<Education />} />
+          <Route path="/Resume" exact element={<Resume />} />
         </Routes>
-        <Routes>
-          <Route path="/E" exact Component={Education}/>  
-        </Routes>
-        <Routes>
-          <Route path="/Resume" exact Component={Resume}/>
-        </Routes>
+        <h1>My Resume</h1>
       </Router>
     </main>
   );
