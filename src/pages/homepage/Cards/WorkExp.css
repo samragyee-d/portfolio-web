@@ -1,0 +1,20 @@
+.Most_Recent{
+    width: 100px;
+    height: 150px;
+    background-color: #f0f0f0;
+    border: 1px solid #000;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 3px;
+  }
+  
+  .Most_Recent-Int{
+    width: 90%;
+    height: 90%;
+    border-radius: 8px;
+    background-color: #ccc;
+    margin-left: 5px;
+  }
