@@ -4,6 +4,7 @@ import Homepage from './pages/homepage/homepage';
 import Education from './components/Education';
 import CardContainer from './pages/homepage/Cards/CardContainer';
 import UnivCard from "./pages/homepage/Cards/UnivCard";
+import WorkExp from './pages/homepage/Cards/WorkExp';
 import Resume from './pages/Resume';
 import './App.css';
 
@@ -11,6 +12,7 @@ function App() {
   return (
     <main className="App">
       <Router>
+        <WorkExp/>
         <UnivCard />
         <CardContainer />
         <Routes>
