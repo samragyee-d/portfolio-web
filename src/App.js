@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Homepage from './pages/homepage/homepage';
 import Education from './components/Education';
 import CardContainer from './pages/homepage/Cards/CardContainer';
-import UnivCard from "./pages/homepage/Cards/UnivCard";
+import EducationDeck from "./pages/homepage/Cards/EducationDeck";
 import WorkExp from './pages/homepage/Cards/WorkExp';
 import Resume from './pages/Resume';
 import './App.css';
@@ -13,7 +13,7 @@ function App() {
     <main className="App">
       <Router>
         <WorkExp/>
-        <UnivCard />
+        <EducationDeck />
         <CardContainer />
         <Routes>
           <Route path="/" exact element={<Homepage />} />
