@@ -11,10 +11,6 @@ const Card = ({ index, xPosition }) => {
       <div className="filler-card" style={style}>
         <div className="filler-card-int"></div>
       </div>
-      
-
-
-
     
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import "./WorkExp.css";
 
 function WorkExp() {
     const Work_Exp = [ {
@@ -6,9 +7,7 @@ function WorkExp() {
         Company: 'WSSC Water',
         Role: 'Data Networking Engineering and Cyber Security Intern',
         type: 'Internship',
-      }
-    
-      ];
+      }];
 
       return (
         <main>
@@ -16,7 +15,7 @@ function WorkExp() {
             {Work_Exp.filter(card => card.type === 'Internship').map(card => (
               <div key={card.id}>
                 <h4 className='Most_Recent-Int'>{card.Company}</h4>
-                <h3 className='Most_Recent-Int'>{card.Role}</h3>
+                <p className='Most_Recent-Int'>{card.Role}</p>
               </div>
             ))}
           </div>
